@@ -55,6 +55,7 @@
                     this.options.img = null;
                 };
             } else {
+                this.options.img.rotate += angleCrds(this._map, this.options.prevLatlng, this._latlng);
                 this._renderer._updateImg(this);
             }
         },
